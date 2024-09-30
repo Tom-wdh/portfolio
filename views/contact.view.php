@@ -11,8 +11,8 @@
 <header>
     <div class="icon">🌐</div>
     <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="index.view.php">Home</a>
+        <a href="about.view.php">About</a>
         <a href="contact.html">Contact</a>
     </div>
 </header>
@@ -47,7 +47,7 @@
 <footer>
     <!-- &copy; -->
     <div>© 2024 My Website</div>
-    <div class="breadcrumbs"><a href="index.html">Home</a> &gt; Contact</div>
+    <div class="breadcrumbs"><a href="index.view.php">Home</a> &gt; Contact</div>
     <div>Email: info@example.com</div>
 </footer>
 <!-- END Footer -->

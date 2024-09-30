@@ -1,24 +1,8 @@
-<html lang="en" class="focus-outline-visible">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage Layout</title>
-    <link rel="stylesheet" href="css/myStyle.css">
+<?php
 
-</head>
-<body>
-<!-- Start Header -->
-<header>
-    <div class="icon">🌐</div>
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-</header>
-<!-- End Header -->
+require './views/layout/head.php';
 
-<!-- Start Main -->
+?>
 <main>
     <aside class="sidebar-l">
         <h2>Menu</h2>
@@ -47,7 +31,7 @@
 <footer>
     <!-- &copy; -->
     <div>© 2024 My Website</div>
-    <div class="breadcrumbs"><a href="index.html">Home</a> &gt; About</div>
+    <div class="breadcrumbs"><a href="index.view.php">Home</a> &gt; About</div>
     <div>Email: info@example.com</div>
 </footer>
 <!-- END Footer -->

@@ -14,15 +14,15 @@
  * Object
  */
 
-echo "<html><head>
+/* echo "<html><head>
 <link rel='stylesheet' href='/views/css/myStyle.css'>
 </head>
 <body>
 <header><div class='icon'>🌐</div>
     <div class='menu'>
-        <a href='index.html'>Home</a>
-        <a href='about.html'>About</a>
-        <a href='contact.html'>Contact</a>
+        <a href='index.view.php'>Home</a>
+        <a href='about.view.php'>About</a>
+        <a href='contact.view.php'>Contact</a>
     </div></header>
 <main>";
 
@@ -132,3 +132,7 @@ echo "</main>
 </footer>
 </body>
 </html>";
+
+*/
+
+require 'views/index.view.php';
