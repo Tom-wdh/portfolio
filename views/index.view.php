@@ -20,9 +20,9 @@ require './views/layout/head.php';
         <br>
         <br>
         <br>
-        <h2>Menu</h2>
+        <h2>Projects</h2>
         <ul>
-            <li>Item 1</li>
+            <li><a href="https://decayingdevs.itch.io">My Itch</a></li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
@@ -40,7 +40,7 @@ require './views/layout/head.php';
 <!-- END Footer -->
 
 </body>
-<script src="./js/myScript.js"></script>
+<script src="./views/js/myScript.js"></script>
 <?php
 
 require './views/layout/footer.php';

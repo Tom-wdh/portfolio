@@ -133,6 +133,14 @@ a {
     color: white;
 }
 
+a:hover {
+    color: #CCC;
+}
+
+a:visited {
+    color: #777;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
