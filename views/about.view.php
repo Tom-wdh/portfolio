@@ -1,7 +1,5 @@
 <?php
-
-require './views/layout/head.php';
-
+require './layout/head.php';
 ?>
 <main>
     <aside class="sidebar-l">

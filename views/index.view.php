@@ -1,6 +1,6 @@
 <?php
 
-require './views/layout/head.php';
+require './layout/head.php';
 
 ?>
 <main>
@@ -27,10 +27,10 @@ require './views/layout/head.php';
 <!-- END Footer -->
 
 </body>
-<script src="./views/js/myScript.js"></script>
+<script src="./js/myScript.js"></script>
 <?php
 
-require './views/layout/footer.php';
+require './layout/footer.php';
 
 ?>
 </html>
