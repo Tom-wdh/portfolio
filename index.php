@@ -135,4 +135,24 @@ echo "</main>
 
 */
 
-require 'views/index.view.php';
+// require 'views/index.view.php';
+
+//die(var_dump($_SERVER));
+
+//die(var_dump($_SERVER['REQUEST_URI']));
+
+$requestPage = $_SERVER['REQUEST_URI'];
+
+switch ($requestPage) {
+    case '/':
+        require 'views/index.view.php';
+        break;
+    case '/about':
+        require 'views/about.view.php';
+        break;
+   case '/contact':
+       require 'views/contact.view.php';
+       break;
+   default:
+       echo "Your favorite color is neither red, blue, nor green!";
+}

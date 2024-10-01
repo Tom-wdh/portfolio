@@ -1,5 +1,5 @@
 <?php
-require './layout/head.php';
+require './views/layout/head.php';
 ?>
 <main>
     <aside class="sidebar-l">

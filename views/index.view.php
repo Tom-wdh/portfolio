@@ -1,13 +1,25 @@
 <?php
 
-require './layout/head.php';
+require './views/layout/head.php';
 
 ?>
+
 <main>
-    <aside class="headbar">
-        <h1>Welcome to my portfolio</h1>
-    </aside>
+    <div class="anims">
+        <div class="anim2"></div>
+        <div class="anim"></div>
+    </div>
+
     <aside class="sidebar-l">
+        <br>
+        <h1>Welcome to my portfolio</h1>
+
+    </aside>
+    <aside class="projects">
+        <br>
+        <br>
+        <br>
+        <br>
         <h2>Menu</h2>
         <ul>
             <li>Item 1</li>
@@ -15,11 +27,12 @@ require './layout/head.php';
             <li>Item 3</li>
         </ul>
     </aside>
-    <section id="myContent" class="content">
-        <h1>Main Content</h1>
-        <p>This is where the main content goes.</p>
-    </section>
 </main>
+
+<div class="anims1">
+    <div class="anim3"></div>
+    <div class="anim4"></div>
+</div>
 <!-- End main -->
 
 <!-- Start Footer -->
@@ -30,7 +43,7 @@ require './layout/head.php';
 <script src="./js/myScript.js"></script>
 <?php
 
-require './layout/footer.php';
+require './views/layout/footer.php';
 
 ?>
 </html>
