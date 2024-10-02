@@ -10,10 +10,13 @@
 <body>
 <!-- Start Header -->
 <header>
-    <div class='icon'><img src="./views/img/logo.png"> </div>
+    <div class='icon'><img src="./views/img/logo.png"> &nbsp;&nbsp;
+        <p class="h1">Tom</p>
+    </div>
     <div class='menu'>
         <a href='/'>Home</a>
         <a href='/about'>Portfolio</a>
         <a href='/contact'>Over Mij</a>
     </div>
 </header>
+

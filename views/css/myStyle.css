@@ -5,6 +5,10 @@ body {
     background: #000;
 
 }
+@font-face {
+    font-family: Archivo;
+    src: url("/views/fonts/ArchivoBlack-Regular.ttf"), url("/views/fonts/ArchivoBlack-Regular.eot");
+}
 
 .anims {
     z-index: -1;
@@ -93,6 +97,7 @@ header {
 .icon img {
     height: 50px;
     width: 50px;
+    float: left;
 }
 .menu {
     display: flex;
@@ -104,6 +109,11 @@ main {
     padding: 10px;
     margin-top: 100px;
     margin-left: 50px;
+}
+
+.h1 {
+    float: right;
+    font-family: "Archivo";
 }
 
 .projects {
@@ -131,15 +141,13 @@ main {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 a:hover {
     color: #CCC;
 }
 
-a:visited {
-    color: #777;
-}
 
 footer {
     display: flex;

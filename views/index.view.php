@@ -5,10 +5,9 @@ require './views/layout/head.php';
 ?>
 
 <main>
-    <div class="anims">
-        <div class="anim2"></div>
-        <div class="anim"></div>
-    </div>
+    <?php
+    require './views/layout/anim1.php';
+    ?>
 
     <aside class="sidebar-l">
         <br>
@@ -29,10 +28,9 @@ require './views/layout/head.php';
     </aside>
 </main>
 
-<div class="anims1">
-    <div class="anim3"></div>
-    <div class="anim4"></div>
-</div>
+<?php
+require './views/layout/anim2.php';
+?>
 <!-- End main -->
 
 <!-- Start Footer -->

@@ -141,18 +141,28 @@ echo "</main>
 
 //die(var_dump($_SERVER['REQUEST_URI']));
 
-$requestPage = $_SERVER['REQUEST_URI'];
+require'./controllers/indexController.php';
+require'./controllers/contactController.php';
+require'./controllers/aboutController.php';
 
-switch ($requestPage) {
+$index =new IndexController;
+$contact =new ContactController;
+$about =new AboutController;
+$path = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : "/";
+
+
+switch ($path) {
+    case '':
     case '/':
-        require 'views/index.view.php';
+    case '/index':
+        $index -> page();
         break;
     case '/about':
-        require 'views/about.view.php';
+        $about -> page();
         break;
-   case '/contact':
-       require 'views/contact.view.php';
-       break;
+    case '/contact':
+        $contact -> page();
+        break;
    default:
-       echo "Your favorite color is neither red, blue, nor green!";
+       echo "Trying to find secret pages? Sorry they don't exist.";
 }

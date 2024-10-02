@@ -2,6 +2,9 @@
 require './views/layout/head.php';
 ?>
 <main>
+    <?php
+    require './views/layout/anim1.php';
+    ?>
     <aside class="sidebar-l">
         <h2>Menu</h2>
         <ul>
@@ -23,17 +26,15 @@ require './views/layout/head.php';
         </ul>
     </aside>
 </main>
-<!-- End main -->
-
-<!-- Start Footer -->
-<footer>
-    <!-- &copy; -->
-    <div>© 2024 My Website</div>
-    <div class="breadcrumbs"><a href="index.view.php">Home</a> &gt; About</div>
-    <div>Email: info@example.com</div>
-</footer>
-<!-- END Footer -->
-
+<?php
+require './views/layout/anim2.php';
+?>
 </body>
+
 <script src="js/myScript.js"></script>
+    <?php
+
+    require './views/layout/footer.php';
+
+    ?>
 </html>

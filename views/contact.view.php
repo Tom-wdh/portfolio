@@ -3,7 +3,11 @@
 require './views/layout/head.php';
 
 ?>
+
 <main>
+    <?php
+    require './views/layout/anim1.php';
+    ?>
     <aside class="sidebar-l">
         <h2>Menu</h2>
         <ul>
@@ -25,6 +29,9 @@ require './views/layout/head.php';
         </ul>
     </aside>
 </main>
+<?php
+require './views/layout/anim2.php';
+?>
 </body>
 <script src="js/myScript.js"></script>
 <?php
