@@ -16,19 +16,20 @@ require './views/layout/head.php';
             <li>Item 3</li>
         </ul>
     </aside>
-    <section id="myContent" class="content">
-        <h1>Contact Content</h1>
-        <p>This is where the contact content goes.</p>
-    </section>
-    <aside class="sidebar-r">
-        <h2>Events List</h2>
-        <ul>
-            <li>Event 1</li>
-            <li>Event 2</li>
-            <li>Event 3</li>
-        </ul>
-    </aside>
+<form action="test.php" method="post">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" name="title"><br>
+    <label for="content">Content:</label><br>
+    <input type="text" id="content" name="content"><br>
+    <label for="author">Author:</label><br>
+    <input type="text" id="author" name="author"><br><br>
+    <input type="submit" value="Submit" name="submit">
+</form>
 </main>
+
+
+
+
 <?php
 require './views/layout/anim2.php';
 ?>
