@@ -10,13 +10,17 @@
 <body>
 <!-- Start Header -->
 <header>
-    <div class='icon'><img src="./views/img/logo.png"> &nbsp;&nbsp;
+    <div class='icon'><a href="/login"><img src="./views/img/logo.png"></a> &nbsp;&nbsp;
         <p class="h1">Tom</p>
     </div>
     <div class='menu'>
-        <a href='/'>Home</a>
-        <a href='/about'>Portfolio</a>
-        <a href='/contact'>Over Mij</a>
+        <a href='/' id="home">Home</a>
+        <a href='/about' id="portfolio">Portfolio</a>
+        <a href='/contact' id="about">Over Mij</a>
     </div>
 </header>
+
+<nav>
+    <button onclick="langChange()" id="translate">Vertalen</button>
+</nav>
 

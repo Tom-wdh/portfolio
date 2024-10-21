@@ -144,10 +144,12 @@ echo "</main>
 require'./controllers/indexController.php';
 require'./controllers/contactController.php';
 require'./controllers/aboutController.php';
+require './controllers/loginController.php';
 
 $index =new IndexController;
 $contact =new ContactController;
 $about =new AboutController;
+$login =new LoginController;
 $path = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : "/";
 
 
@@ -162,6 +164,9 @@ switch ($path) {
         break;
     case '/contact':
         $contact -> page();
+        break;
+    case '/login':
+        $login -> page();
         break;
    default:
        echo "Trying to find secret pages? Sorry they don't exist.";

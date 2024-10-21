@@ -27,7 +27,7 @@
 // // Expected output:
 // // person: Stephan Hoeksema
 //
-function Car(make, model, year) {
+/*function Car(make, model, year) {
     this.make = make;
     this.model = model;
     this.year = year;
@@ -44,3 +44,34 @@ myArray[1] = "Bassima";
 jsDisplay.innerHTML = myArray.length + "<br>";
 
 myArray.forEach((element) => jsDisplay.innerHTML = jsDisplay.innerHTML + (element) + "<br>");
+*/
+
+let lang = false;
+
+
+function langChange() {
+    if (lang === false) {
+        changeLang();
+    } else {
+        changeLangBack();
+    }
+}
+function changeLang() {
+    document.getElementById("about").innerHTML = "About Me";
+    document.getElementById("welcome").innerHTML = "Welcome to my portfolio";
+    document.getElementById("projects").innerHTML = "Projects";
+    document.getElementById("itch").innerHTML = "My Itch";
+    document.getElementById("translate").innerHTML = "Translate";
+    lang = true;
+
+}
+
+
+function changeLangBack(){
+    document.getElementById("about").innerHTML = "Over Mij";
+    document.getElementById("welcome").innerHTML = "Welkom bij mijn portfolio";
+    document.getElementById("projects").innerHTML = "Projecten";
+    document.getElementById("itch").innerHTML = "Mijn Itch";
+    document.getElementById("translate").innerHTML = "Vertalen";
+    lang = false;
+}

@@ -11,7 +11,7 @@ require './views/layout/head.php';
 
     <aside class="sidebar-l">
         <br>
-        <h1>Welcome to my portfolio</h1>
+        <h1 id="welcome">Welkom bij mijn portfolio</h1>
 
     </aside>
     <aside class="projects">
@@ -19,9 +19,9 @@ require './views/layout/head.php';
         <br>
         <br>
         <br>
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
         <ul>
-            <li><a href="https://decayingdevs.itch.io">My Itch</a></li>
+            <li><a href="https://decayingdevs.itch.io" id="itch">Mijn Itch</a></li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
