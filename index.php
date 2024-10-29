@@ -144,11 +144,13 @@ echo "</main>
 require'./controllers/indexController.php';
 require'./controllers/contactController.php';
 require'./controllers/aboutController.php';
+require './controllers/portfolioController.php';
 require './controllers/loginController.php';
 
 $index =new IndexController;
 $contact =new ContactController;
 $about =new AboutController;
+$portfolio =new PortfolioController;
 $login =new LoginController;
 $path = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : "/";
 
@@ -164,6 +166,9 @@ switch ($path) {
         break;
     case '/contact':
         $contact -> page();
+        break;
+    case '/portfolio':
+        $portfolio -> page();
         break;
     case '/login':
         $login -> page();

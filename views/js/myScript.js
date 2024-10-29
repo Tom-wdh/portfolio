@@ -52,16 +52,17 @@ let lang = false;
 function langChange() {
     if (lang === false) {
         changeLang();
-    } else {
+    } else if (lang === true){
         changeLangBack();
     }
 }
 function changeLang() {
     document.getElementById("about").innerHTML = "About Me";
     document.getElementById("welcome").innerHTML = "Welcome to my portfolio";
-    document.getElementById("projects").innerHTML = "Projects";
-    document.getElementById("itch").innerHTML = "My Itch";
+    document.getElementById("skills").innerHTML = "Skills";
     document.getElementById("translate").innerHTML = "Translate";
+    document.getElementById("cta").innerHTML = "See projects here";
+
     lang = true;
 
 }
@@ -70,8 +71,32 @@ function changeLang() {
 function changeLangBack(){
     document.getElementById("about").innerHTML = "Over Mij";
     document.getElementById("welcome").innerHTML = "Welkom bij mijn portfolio";
-    document.getElementById("projects").innerHTML = "Projecten";
-    document.getElementById("itch").innerHTML = "Mijn Itch";
+    document.getElementById("skills").innerHTML = "Vaardigheden";
     document.getElementById("translate").innerHTML = "Vertalen";
+    document.getElementById("cta").innerHTML = "Bekijk mijn projecten hier";
     lang = false;
 }
+
+
+// Grab references to elements
+var element = document.getElementById('project_1');
+var modal = document.getElementById('myModal');
+var closeBtn = document.getElementsByClassName('close')[0];
+
+// Show the modal when the element is clicked
+element.addEventListener('click', function() {
+    modal.style.display = "block";
+});
+
+// Close the modal when the "x" is clicked
+closeBtn.addEventListener('click', function() {
+    modal.style.display = "none";
+});
+
+// Close the modal when clicking outside the modal content
+window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+

@@ -15,12 +15,9 @@
     </div>
     <div class='menu'>
         <a href='/' id="home">Home</a>
-        <a href='/about' id="portfolio">Portfolio</a>
-        <a href='/contact' id="about">Over Mij</a>
+        <a href='/portfolio' id="portfolio">Portfolio</a>
+        <a href='/about' id="about">Over Mij</a>
+        <a href='/contact' id="contact">Contact</a>
     </div>
 </header>
-
-<nav>
-    <button onclick="langChange()" id="translate">Vertalen</button>
-</nav>
 

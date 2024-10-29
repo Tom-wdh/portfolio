@@ -7,7 +7,7 @@ require './views/layout/head.php';
 
     <?php
 echo "<table style='border: solid 1px white;'>";
-echo "<tr><th>Title</th><th>Content</th><th>Author</th></tr>";
+echo "<tr><th>First Name</th><th>Last Name</th><th>Email</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator
 {
@@ -42,7 +42,7 @@ $dbname = "profile";
 
         // use exec() because no results are returned
 
-        $sql = "SELECT title, content ,author FROM posts";
+        $sql = "SELECT FirstName, LastName ,Email FROM contact";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
 

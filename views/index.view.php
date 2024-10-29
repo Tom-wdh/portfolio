@@ -1,6 +1,7 @@
 <?php
 
 require './views/layout/head.php';
+require './views/layout/nav.php';
 
 ?>
 
@@ -19,15 +20,16 @@ require './views/layout/head.php';
         <br>
         <br>
         <br>
-        <h2 id="projects">Projects</h2>
+        <h2 id="skills">Vaardigheden</h2>
         <ul>
-            <li><a href="https://decayingdevs.itch.io" id="itch">Mijn Itch</a></li>
+            <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
     </aside>
-</main>
 
+</main>
+<a href="/portfolio" class="cta" id="cta">Bekijk projecten hier</a>
 <?php
 require './views/layout/anim2.php';
 ?>
