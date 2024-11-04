@@ -1,54 +1,6 @@
-//
-// for(let i = 1; i < myArray.length; i++) {
-//     console.log(myArray[i]);
-// }
-// // Objecten
-// const person = {
-//     name: "Mischa",
-//     height: 186
-// }
-//
-// // const user = new person()
-// const person2 = {
-//     name: "Damien",
-//     height: 183
-// }
-// // console.log(myObj.person01.firstname)
-//
-// // const object = { a: 1, b: 2, c: 3 };
-//
-// //'i' are properties of object person2
-// for (const i in person2) {
-//     console.log(i + ": " + person2[i]);
-// }
-//
-// let arrayX = ["x", "y", "z"]
-// console.log(...arrayX)
-// // Expected output:
-// // person: Stephan Hoeksema
-//
-/*function Car(make, model, year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-}
-
-let jsDisplay = document.getElementById('js');
-//let myCar = new Car('Kia', 'Ceed', 2022);
-//jsDisplay.innerHTML = myCar.make + " " + myCar.year;
-
-let myArray = ["Stephan", "Arie", "Eva"];
-
-myArray.push("Stefanie");
-myArray[1] = "Bassima";
-jsDisplay.innerHTML = myArray.length + "<br>";
-
-myArray.forEach((element) => jsDisplay.innerHTML = jsDisplay.innerHTML + (element) + "<br>");
-*/
 
 
-
-// Grab references to elements
+// Referenties naar alle objecten
 var element = document.getElementById('project_1');
 var element2 = document.getElementById('project_2');
 var element3 = document.getElementById('project_3');
@@ -71,7 +23,7 @@ var closeBtn5 = document.getElementsByClassName('close5')[0];
 var closeBtn6 = document.getElementsByClassName('close6')[0];
 var closeBtn7 = document.getElementsByClassName('close7')[0];
 
-// Show the modal when the element is clicked
+// Laat de modal zien wanneer erop geklikt wordt
 element.addEventListener('click', function() {
     modal.style.display = "block";
 });
@@ -100,12 +52,12 @@ element7.addEventListener('click', function() {
     modal7.style.display = "block";
 });
 
-// Close the modal when the "x" is clicked
+// Sluit de modal wanneer op x wordt geklikt
 closeBtn.addEventListener('click', function() {
     modal.style.display = "none";
 });
 
-// Close the modal when clicking outside the modal content
+// Sluit de modal wanneer er er buiten wordt geklikt
 window.addEventListener('click', function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
@@ -127,7 +79,6 @@ closeBtn3.addEventListener('click', function() {
     modal3.style.display = "none";
 });
 
-// Close the modal when clicking outside the modal content
 window.addEventListener('click', function(event) {
     if (event.target === modal3) {
         modal3.style.display = "none";
@@ -138,7 +89,6 @@ closeBtn4.addEventListener('click', function() {
     modal4.style.display = "none";
 });
 
-// Close the modal when clicking outside the modal content
 window.addEventListener('click', function(event) {
     if (event.target === modal4) {
         modal4.style.display = "none";
@@ -149,7 +99,6 @@ closeBtn5.addEventListener('click', function() {
     modal5.style.display = "none";
 });
 
-// Close the modal when clicking outside the modal content
 window.addEventListener('click', function(event) {
     if (event.target === modal5) {
         modal5.style.display = "none";
@@ -160,7 +109,6 @@ closeBtn6.addEventListener('click', function() {
     modal6.style.display = "none";
 });
 
-// Close the modal when clicking outside the modal content
 window.addEventListener('click', function(event) {
     if (event.target === modal6) {
         modal6.style.display = "none";
@@ -171,7 +119,6 @@ closeBtn7.addEventListener('click', function() {
     modal7.style.display = "none";
 });
 
-// Close the modal when clicking outside the modal content
 window.addEventListener('click', function(event) {
     if (event.target === modal7) {
         modal7.style.display = "none";
@@ -182,7 +129,6 @@ closeBtn.addEventListener('click', function() {
     modal.style.display = "none";
 });
 
-// Close the modal when clicking outside the modal content
 window.addEventListener('click', function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
@@ -191,7 +137,7 @@ window.addEventListener('click', function(event) {
 
 
 function checkCheckboxes(event) {
-    event.preventDefault(); // Prevent form submission for testing
+    event.preventDefault(); // Vermijd inleveren van form voor testen
 
     const gameChecked = document.getElementById("games").checked;
     const programChecked = document.getElementById("programs").checked;
@@ -202,17 +148,17 @@ function checkCheckboxes(event) {
         if (!gameChecked) {
             item.style.display = 'none';
         } else {
-            item.style.display = ''; // Reset display if checked
+            item.style.display = ''; // Reset display als gevinkt is
         }
     });
 
-    // Hide program items if the checkbox is not checked
+    // Verberg de niet gefilterde programma's
     const programItems = document.querySelectorAll('.program');
     programItems.forEach(item => {
         if (!programChecked) {
             item.style.display = 'none';
         } else {
-            item.style.display = ''; // Reset display if checked
+            item.style.display = ''; // Reset display als gevinkt is
         }
     });
 }
