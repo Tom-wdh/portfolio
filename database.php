@@ -3,8 +3,10 @@
 require './views/layout/head.php';
 
 ?>
-
-
+<main>
+<?php
+require './views/layout/anim1.php';
+?>
     <?php
 echo "<table style='border: solid 1px white;'>";
 echo "<tr><th>First Name</th><th>Last Name</th><th>Email</th></tr>";
@@ -23,7 +25,7 @@ class TableRows extends RecursiveIteratorIterator
 
     public function endChildren(): void
     {
-        echo "</tr>" . "\n";
+        echo "</tr>" . "\n" . "</table>";
     }
 }
 
@@ -56,6 +58,9 @@ $dbname = "profile";
     }
 
     $conn = null;
+
+
+require './views/layout/anim2.php';
 
 
 require './views/layout/footer.php';

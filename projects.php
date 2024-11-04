@@ -52,7 +52,7 @@ class ItemDivs extends RecursiveIteratorIterator
 
 $servername = "localhost";
 $username = "root";
-$password = "Zuiijsvhatte33!";
+$password = "";
 $dbname = "profile";
 
 $sql = "";

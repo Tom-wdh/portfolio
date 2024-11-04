@@ -19,7 +19,13 @@ $sql = "";
 
         // use exec() because no results are returned
         $conn->exec($sql);
-        echo "New record created successfully";
+        require './views/layout/head.php';
+        echo "<main>";
+        require './views/layout/anim1.php';
+        echo "<a href='/contact' class='return' id='return'>Ga terug</a>";
+        echo "</main>";
+        require './views/layout/anim2.php';
+        require './views/layout/footer.php';
 
     } catch (PDOException $e) {
         echo $sql . "<br>" . $e->getMessage();
@@ -27,5 +33,6 @@ $sql = "";
 
     $conn = null;
 }
+
 
 ?>

@@ -8,14 +8,15 @@ require './views/layout/head.php';
     <?php
     require './views/layout/anim1.php';
     ?>
-
+<div class="contact">
     <form method="post" action="login.php">
         <label for="user">Username:</label><br>
         <input type="text" id="user" name="user"><br>
         <label for="pw">Password:</label><br>
-        <input type="text" id="pw" name="pw"><br>
+        <input type="password" id="pw" name="pw"><br>
         <input type="submit" value="Submit" name="submitted">
     </form>
+</div>
 </main>
 
 <?php

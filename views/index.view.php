@@ -1,7 +1,6 @@
 <?php
 
-require './views/layout/head.php';
-require './views/layout/nav.php';
+require './views/layout/head.php'
 
 ?>
 
@@ -11,24 +10,21 @@ require './views/layout/nav.php';
     ?>
 
     <aside class="sidebar-l">
-        <br>
         <h1 id="welcome">Welkom bij mijn portfolio</h1>
-
+        <p>Ik ben een student van Windesheim Almere en doe de studie AD Software Development</p>
     </aside>
     <aside class="projects">
         <br>
-        <br>
-        <br>
-        <br>
-        <h2 id="skills">Vaardigheden</h2>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+        <h1 id="skills">Vaardigheden</h1>
+        <ul class="skill">
+            <li>Web Development</li>
+            <li>Software Development</li>
+            <li>Game Development</li>
         </ul>
     </aside>
 
 </main>
+<br><br><br>
 <a href="/portfolio" class="cta" id="cta">Bekijk projecten hier</a>
 <?php
 require './views/layout/anim2.php';
